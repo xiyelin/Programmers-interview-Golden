@@ -10,16 +10,16 @@ class ReverseEqual
 public:
 	bool checkReverseEqual(string s1, string s2)
 	{
-		if(s1.size() != s2.size())
-			return false;
+	        if(s1.size() != s2.size())
+		    return false;
 
 		string str = s1 + s1;
 						 
-	    if (string::npos != str.find(s2))
-	    {
+       	        if (string::npos != str.find(s2))
+	        {
 		    return true;
-	    }
-	    else
+	        }
+	        else
 		    return false;
 	}
 };
